@@ -1,0 +1,358 @@
+
+html, body { /* padaro per backgrounda per visa ekrana */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+	background-color: none;
+}
+
+
+/*body.about #header {
+	height: 100px;
+	background: #db6d16
+		    url(../images/headers/about.jpg);
+}*/
+
+.hidden {
+	display: none;
+	clear: both;
+}
+
+h1 {
+	margin: 20px;
+	padding: 0px;
+	float: right;
+	margin-top: 57px;
+	padding-right: 31px;
+}
+
+#content h2 {
+	margin: 20;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+#content p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+
+#page-container {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+}
+
+
+
+#main-nav { height: 50px; }
+#main-nav dl { margin: 0; padding: 0; }
+/* IE5 Mac Hack \*/ 
+#main-nav { padding-left: 11px; } 
+/*/ 
+#main-nav { padding-left: 11px; overflow: hidden; } 
+/* End Hack */
+#main-nav dt a {
+	display: block;
+	height: 0px !important;
+	height /**/:50px; /* IE 5/Win hack */ 
+	padding: 50px 0 0 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+#main-nav dt a:hover {
+	background-position: 0 -50px;
+}#main-nav dt#about,
+#main-nav dt#about a { width: 71px; background-image: url(../images/nav/about.gif); }
+
+#main-nav dt#services,
+#main-nav dt#services a { width: 84px; background-image: url(../images/nav/services.gif); }
+
+#main-nav dt#portfolio,
+#main-nav dt#portfolio a { width: 95px; background-image: url(../images/nav/portfolio.gif); }
+
+#main-nav dt#contact,
+#main-nav dt#contact a { width: 106px; background-image: url(../images/nav/contact.gif); }
+
+#header {
+	height: 100px;
+	background: #bcd5d1;
+	background-image: url("https://www.pritikin.com/wp/wp-content/uploads/2014/05/omlett-300x100.jpg.pagespeed.ce.AJqjphH27J.jpgg");
+	
+}
+
+#header #shopping-cart {
+	position: relative;
+	float: right;
+    width: 250px;
+    height: 0px;
+	margin-top: 0px;
+	margin-right: 70px;
+           background: green;
+}
+
+#header #logo {
+	position: absolute;
+	float: left;
+    width: 250px;
+    height: 50px;
+	margin-top: 25px;
+	margin-left: 100px;
+           background: none;
+}
+
+#sidebar-a {
+	float: left;
+	width: 18%;
+	line-height: 18px;
+	background-color: #1d2120;
+}
+
+#sidebar-a .padding {
+	padding: 25px;
+}
+
+#content {
+	margin-top: 50px;
+	text-align: center;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 130%;
+}
+	
+}
+
+#content .padding {
+	padding: 25px;
+}
+
+#footer {
+	clear: both;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+	background-color: #333;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 10px;
+	color: #c9c9c9;
+	border-top: 1px solid #efefef;
+	margin-top: 50px;
+	padding: 15px 25px;
+	
+}
+
+#footer a {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #db6d16;
+}
+#footer #altnav {
+	clear: both;
+	width: 350px;
+	float: right;
+	text-align: right;
+	padding-top: 13px;
+}
+
+#footer #copyright {
+	padding-top: 13px;
+}
+
+
+ul.nav {
+	
+    list-style-type: none;
+	float: right;
+    margin: 0px;
+	padding: 0px;
+    overflow: hidden;
+    background-color: #1d2120;
+
+    top: 0;
+    width: 82%;
+	
+	
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav a:hover:not(.active) {
+    background-color: #5a5c51;
+}
+
+.active {
+    background-color: #ba9077;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+.product-card {
+  flex: 2 16%;
+}
+.product-image img {
+  max-width: 100%;
+  border-style: solid;
+}
+
+#product-price {
+	position: absolute;
+
+  display: inline-block;
+  float: left;
+  padding-top: 25px;
+}
+#product-plus {
+	position: relative;
+  margin-top: auto;
+  display: inline-block;
+  float: right;
+  padding-top: 15px;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}
+
+/* Sidebar */
+
+.sidebar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #5a5c51;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-brand {
+	 list-style: none;
+    height: 42px;
+    font-size: 18px;
+    line-height: 45px;
+	padding-left: 20px;
+	background-color: grey;
+	
+}
+
+.sidebar-brand a {
+    color: #fff;
+	 text-decoration: none;
+	
+}
+
+.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.login-button {
+  background: url('login-logo.png') right-side center no-repeat;
+  float: right;
+  width: 70px;
+  height: 25px;
+  margin-top: 70px;
+  margin-right: -72px;
+  padding-right: 50px;
+}
+.signup-button {
+  background: url('login-logo.png') right-side center no-repeat;
+  float: right;
+  width: 70px;
+  height: 25px;
+  margin-top: 70px;
+  margin-right: -150px;
+  padding-right: 50px;
+}
+.login-input{
+  float: right;
+  width: 100px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 80px;
+  padding-right: 50px;
+}
+.login-password{
+  float: right;
+  width: 100px;
+  height: 20px;
+  margin-top: 35px;
+  margin-right: -155px;
+  padding-right: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
